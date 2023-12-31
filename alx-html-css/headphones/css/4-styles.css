@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+
+:root
+{
+    --primary-color: #FFFFFF;
+    --secondary-color: #FF6565;
+    --spacing-xxl: 125px;
+    --spacing-xl: 90px;
+    --spacing-lg: 75px;
+    --spacing-md: 50px;
+    --spacing-s: 25px;
+    --spacing-xs: 15px;
+    --spacing-xxs: 5px;
+
+    
+    --font-size-xxs: 12px;
+    --font-size-xs: 14px;
+    --font-size-s: 16px;
+    --font-size-md: 25px;
+    --font-size-lg: 32px;
+    --font-size-xl: 46px;
+
+    --link-hover-active: #ff6565;
+    --color-white: white;
+    --button-opacity-hover-active: 0.9;
+}
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+
+}
+
+header 
+{
+    height: 800px;
+    background-image: url(/headphones/images/headphones_hero_1.jpg);
+    background-size: cover;
+    padding-left: 200px;
+    padding-right: var(--spacing-xl);
+    background-repeat: no-repeat;
+    color: var(--primary-color);
+    margin-top: 3px;
+}
+
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    /* background-color: red; */
+}
+
+header > div > nav 
+{
+    padding-top: 25px;
+}
+.sub-nav 
+{
+    font-size: var(--font-size-xxs);
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    column-gap: var(--spacing-md);
+}
+
+.nav-image 
+{
+    height: var(--font-size-lg);
+    font-weight: bold;
+}
+
+.main-part 
+{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text 
+{
+    text-align: center;
+    margin-top: 160px;
+    margin-left: 26px;
+    
+}
+
+.text > h1 
+{
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0;
+}
+
+.text > h6 
+{
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 1;
+    
+}
+
+.text > p
+{
+    width: 637px;
+    margin-top: 70px;
+    line-height: 1.6;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.button 
+{
+    border-radius: var(--spacing-s);
+    background-color: var(--secondary-color);
+    background: var(--link-hover-active);
+	color: var(--color-white);
+    font-weight: bold;
+	border: none;
+    height: 44px;
+    width: 162px;
+    cursor: pointer;
+}
+
+input[value] 
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
