@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
 
-:root
-{
+:root {
     --primary-color: #FFFFFF;
     --secondary-color: #FF6565;
     --spacing-xxl: 125px;
@@ -12,7 +11,7 @@
     --spacing-xs: 15px;
     --spacing-xxs: 5px;
 
-    
+
     --font-size-xxs: 12px;
     --font-size-xs: 14px;
     --font-size-s: 16px;
@@ -26,14 +25,14 @@
 }
 
 
-body
-{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans 3', sans-serif;
-    /* max-width: 1400px; */
-    
+    max-width: 1400px;
+
 }
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
@@ -41,15 +40,14 @@ body::-webkit-scrollbar {
 
 /* header */
 
-header 
-{
+header {
     height: 800px;
     background-image: url(/headphones/images/headphones_hero_1.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     color: var(--primary-color);
     background-position: center;
-    margin-top: 2px;
+    /* margin-top: 2px; */
 }
 
 /* humburger */
@@ -57,31 +55,28 @@ header
 
 
 
-.nav-items
-{
-    padding-top: 20px;
+.nav-items {
+    padding-top: 25px;
     /* background-color: greenyellow; */
 
 }
 
-nav
-{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 32px;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 200px;
+    margin-right: 200px;
     /* width: 1000px; */
     padding: 0;
     /* background-color: red; */
-    
+
 }
 
- 
 
-.sub-nav 
-{
+
+.sub-nav {
     font-size: var(--font-size-xxs);
     font-weight: bold;
     list-style: none;
@@ -89,20 +84,17 @@ nav
     column-gap: var(--spacing-md);
     cursor: context-menu;
 }
-li:hover 
-{
+
+li:hover {
     color: var(--link-hover-active);
     opacity: var(--button-opacity-hover-active);
 }
 
-.nav-image 
-{
+.nav-image {
     height: var(--font-size-lg);
-    font-weight: bold;
 }
 
-.main-part 
-{
+.main-part {
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -110,48 +102,43 @@ li:hover
     justify-content: center;
 }
 
-.text 
-{
+.text {
     text-align: center;
     margin-top: 160px;
     /* margin-left: 26px; */
     /* background-color: green; */
 }
 
-.text > h1 
-{
+.text>h1 {
     font-weight: bold;
     font-size: 32px;
     margin: 0;
 }
 
-.text > h6 
-{
+.text>h6 {
     font-weight: 600;
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1;
-    
+
 }
 
-.text > p
-{
+.text>p {
     width: 637px;
     /* line-height: 1.6; */
     font-weight: normal;
     font-size: 16px;
-    opacity: .9;    
+    opacity: .9;
 }
 
-.button 
-{
+.button {
     border-radius: var(--spacing-s);
     background-color: var(--secondary-color);
     background: var(--link-hover-active);
-	color: var(--color-white);
+    color: var(--color-white);
     font-weight: bold;
-	border: none;
+    border: none;
     height: 44px;
     width: 162px;
     cursor: pointer;
@@ -159,87 +146,75 @@ li:hover
     margin-bottom: 60px;
 }
 
-input[value] 
-{
+input[value] {
     font-size: 14px;
     font-weight: bold;
 }
 
 /* part_1_what_we_do */
 
-.part_1_what_we_do
-{
+.part_1_what_we_do {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* background-color: red; */
-    /* margin-left: 382px; */
-    /* width: 637px; */
     margin-top: 75px;
-    
+    color: black;
+
 }
 
-.part_1_what_we_do > p 
-{
+.part_1_what_we_do>p {
     width: 637px;
-    /* line-height: 1.6; */
+    line-height: 1.6;
     font-weight: normal;
     font-size: 16px;
-    opacity: .9;  
-    /* background-color: green; */
 }
 
-.part_1_what_we_do > h2
-{
+.part_1_what_we_do>h2 {
     font-weight: 600;
     font-size: 32px;
 }
 
 /* part_2_icons_section */
 
-.part_2_icons
-{
-    /* margin-left: 200px; */
-    /* background-color: green; */
+.part_2_icons {
+    margin-left: 200px;
+    margin-right: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* width: 1002px; */
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     /* background-color: red; */
 }
 
 
-.icon_items 
-{
+.icon_items {
     width: 207px;
+    /* height: 180px; */
     text-align: center;
 }
 
-.icon_items > img
-{
-    height: 40%;
+.icon_items>img {
+    height: 32%;
 }
 
-.icon_items > h3
-{
+.icon_items>h3 {
     font-weight: 600;
     font-size: 18px;
 }
 
-.icon_items > p 
-{
+.icon_items>p {
     font-weight: normal;
     font-size: 14px;
+    line-height: 1.6;
 }
 
 /* Our results section */
 
-.our_results
-{
+.our_results {
     height: 650px;
     background-image: url(/headphones/images/headphones_hero_2.jpg);
     background-position: center;
@@ -251,43 +226,40 @@ input[value]
     justify-content: center;
 }
 
-.part_3_dark 
-{
+.part_3_dark {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    
+
 }
 
-.part_3_dark > h2 
-{
+.part_3_dark>h2 {
     font-weight: 600;
     font-size: 32px;
 }
 
 
-.part_3_dark > p
-{
+.part_3_dark>p {
     font-weight: normal;
     font-size: 16px;
     width: 637px;
-    opacity: .9;  
+    opacity: .9;
 }
 
-.dot 
-{
+.dot {
     /* background-color: red; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 30px;
-    
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+
 }
 
-.pentagon 
-{
+.pentagon {
     background-image: url(/headphones/images/pentagone.png);
     height: 190px;
     width: 190px;
@@ -297,8 +269,7 @@ input[value]
     line-height: 0.5;
 }
 
-.pentagon > h3
-{
+.pentagon>h3 {
     font-weight: bold;
     font-size: 46px;
     margin-top: 70px;
@@ -306,8 +277,7 @@ input[value]
     opacity: .9;
 }
 
-.pentagon > p
-{
+.pentagon>p {
     font-weight: normal;
     font-size: 14px;
     opacity: .9;
@@ -322,13 +292,14 @@ input[value]
     margin-bottom: 50px;
     /* height: 373px; */
 }
+
 .contact_us h2 {
     color: #071629;
     font-weight: 600;
     font-size: 32px;
 }
 
-.form input{
+.form input {
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
@@ -342,7 +313,7 @@ input[value]
 
 input::placeholder {
     color: #071629;
-    
+
 }
 
 .form {
@@ -350,7 +321,7 @@ input::placeholder {
 }
 
 
-footer{
+footer {
     background-color: #071629;
     height: 249px;
     display: flex;
@@ -362,10 +333,12 @@ footer{
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
     align-items: center;
     font-size: 16px;
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 .logo img {
@@ -373,24 +346,68 @@ footer{
     height: 32px;
 }
 
- div .footer_nav {
+div .footer_nav {
     display: flex;
     justify-content: space-between;
     width: 130px;
     height: 30px;
- }
+}
 
 
 footer p {
     color: #FFFFFF;
     font-size: 12px;
     opacity: 0.3;
-    margin-top: 75px;
+    margin-top: 70px;
     text-align: center;
-    
+
 }
 
-@media only screen and(max-width: 600px) {
-    
+@media only screen and (min-width: 1200px) {
+    html {
+        /* max-width: 1400px; */
+        margin-left: 250px;
+        background-color: black;
+    }
+
+    body {
+        background-color: #FFFFFF;
+    }
+
 }
 
+@media only screen and (min-width:600px) and (max-width:1281px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: red; */
+        margin-left: 66px;
+        margin-right: 66px;
+    }
+
+    .part_2_icons {
+        flex-wrap: wrap;
+        width: 472px;
+        gap: 50px;
+    }
+
+    .our_results {
+        height: 876px;
+    }
+
+    .dot {
+        flex-wrap: wrap;
+        width: 472px;
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+
+    header {}
+
+    .main-part>p {}
+}
