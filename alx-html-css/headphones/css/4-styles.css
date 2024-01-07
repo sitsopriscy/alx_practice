@@ -53,7 +53,29 @@ header {
 /* humburger */
 
 
+.menu-toggle {
+    display: none;
+    /* Hide the checkbox */
+}
 
+.hamburger {
+    cursor: pointer;
+    font-size: 20px;
+    /* position: relative; */
+    display: none;
+}
+
+/* .small-screen-sub-nav {
+    display: none;
+} */
+.sub-nav {
+    /* display: none; */
+}
+
+.menu-toggle:checked+.sub-nav {
+    display: block;
+    /* Show the navigation items when the checkbox is checked */
+}
 
 .nav-items {
     padding-top: 25px;
@@ -63,6 +85,7 @@ header {
 
 nav {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     height: 32px;
@@ -412,7 +435,25 @@ footer p {
     nav {
         margin-left: 20px;
         margin-right: 20px;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
+
+
+    /* small-screen-sub-nav */
+    .sub-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu-toggle:checked+.sub-nav {
+        display: none;
+    }
+
+    /* end */
 
     .part_2_icons,
     .dot {
