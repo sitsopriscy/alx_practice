@@ -31,7 +31,7 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Source Sans 3', sans-serif;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -241,7 +241,8 @@ input[value]
 .our_results
 {
     height: 650px;
-    background-image: url(/headphones/images/headphones_hero_2.jpg);
+    /* background-image: url(/headphones/images/headphones_hero_2.jpg); */
+    background-image:url(./images/headphones_hero_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,7 +289,7 @@ input[value]
 
 .pentagon 
 {
-    background-image: url(/headphones/images/pentagone.png);
+    background-image: url('/headphones/images/pentagone.png');
     height: 190px;
     width: 190px;
     background-size: 190px;
@@ -389,3 +390,8 @@ footer p {
     text-align: center;
     
 }
+
+@media only screen and(max-width: 600px) {
+    
+}
+
