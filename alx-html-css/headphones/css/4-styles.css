@@ -241,8 +241,7 @@ input[value]
 .our_results
 {
     height: 650px;
-    /* background-image: url(/headphones/images/headphones_hero_2.jpg); */
-    background-image:url(./images/headphones_hero_1.jpg);
+    background-image: url(/headphones/images/headphones_hero_2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -289,7 +288,7 @@ input[value]
 
 .pentagon 
 {
-    background-image: url('/headphones/images/pentagone.png');
+    background-image: url(/headphones/images/pentagone.png);
     height: 190px;
     width: 190px;
     background-size: 190px;
